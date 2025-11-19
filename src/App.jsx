@@ -7,12 +7,12 @@ import axios from 'axios';
 // --- API Configuration ---
 // =================================================================
 
-// Use the correct deployed backend URL
+// Ensure this URL is correct and matches your deployed backend project
 const API_BASE_URL = 'https://registration-dashboard-backend.vercel.app/api/auth';
 
 
 // =================================================================
-// --- Validation Logic ---
+// --- Validation Logic (Client-Side) ---
 // =================================================================
 
 const validateEmail = (email) => {
@@ -141,8 +141,7 @@ function LoginForm({ setMessage, clearMessage }) {
       setMessage({ type: 'success', content: 'Login successful! Redirecting...' });
 
       setTimeout(() => {
-        // Use the correct destination URL
-        window.location.href = 'https://registration-dashboard-frontend.vercel.app/dashboard'; 
+        window.location.href = 'https://registration-dashboard-frontend.vercel.app/dashboard'; // Adjust destination URL as needed
       }, 1500);
 
     } catch (error) {
