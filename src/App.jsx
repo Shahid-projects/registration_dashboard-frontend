@@ -141,7 +141,7 @@ function LoginForm({ setMessage, clearMessage }) {
       setMessage({ type: 'success', content: 'Login successful! Redirecting...' });
 
       setTimeout(() => {
-        window.location.href = 'https://registration-dashboard-frontend.vercel.app/dashboard'; // Adjust destination URL as needed
+        window.location.href = 'https://portfolio-shahid-frontend.vercel.app'; // Adjust destination URL as needed
       }, 1500);
 
     } catch (error) {
